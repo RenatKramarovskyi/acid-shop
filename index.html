@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/addToCart.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>SCAM SHOP</h1>
+        <button id="cartButton">Cart (0)</button>
+    </header>
+
+    <main>
+        <div class="product-card">
+            <img src="public/standard.png" alt="standard wish">
+            <h2>Standard Wish</h2>
+            <p>Price : 10 uah</p>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="public/event.png" alt="event wish">
+            <h2>Event Wish</h2>
+            <p>Price : 20 uah</p>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="public/primogem.png" alt="200 primogems">
+            <h2>200 Primogems</h2>
+            <p>Price : 50 uah</p>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="public/genesis.png" alt="500 genesis crystal">
+            <h2>500 Genesis Crystal</h2>
+            <p>Price : 100 uah</p>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+
+
+    </main>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cart</h2>
+            <ul id="cartItems">
+
+            </ul>
+            <div>
+                <button id="checkoutButton">Confirm order</button>
+                <button id="removeAllButton">Remove All</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
